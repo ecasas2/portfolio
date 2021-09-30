@@ -28,10 +28,12 @@
     #particles-js{
       
         padding-top: 265px;
+        margin-top: 150px;
     }
 
     .type{
         font-size: 15px;
+        color: black;
     }
 
     .servicios{
@@ -58,67 +60,83 @@
 
 @media (max-width:768px){
 
+  header{
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+header img{
+    margin: 20px 40px;
+}
+header label{
+    display:block; 
+}
+header label p{
+    margin-left: 33px;
+    margin-top: -10px;
+}
+
+  .menu{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color:blue;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+    margin-top: 100px;
+    padding:  20px 0px;
+    z-index: 1000;
+}
+.menu ul{
+    width: 100%;
+    flex-direction: column; 
+}
+.menu li{
+    padding:35px;
+    border-bottom: 3px solid white;
+}
+
+.llamanos{
+    display: none;
+}
+#btn-menu:checked ~ .menu{
+    margin-left: 0;
+} 
+
     #particles-js{
        justify-content: center;
        align-items: baseline;
        align-content: center;
        padding-top: 195px;
-    }
+       margin-top: 20px;
 
-    header{
-        padding: 0;
-        display: flex;
-        justify-content:space-between;
-        
-    }
+       .intro{
+        width: 90%;
+    
+        }
 
-    header img{
-        margin: 20px 40px;
-    }
-    header label{
-        display:block; 
-    }
-    header label p{
-        margin-left: 33px;
-        margin-top: -10px;
-    }
-    .menu{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        background-color:blue;
-        width: 50%;
-        margin-left: -100%;
-        transition: all 0.5s;
-        margin-top: 100px;
-        padding:  20px 0px;
-        z-index: 1000;
-    }
-    .menu ul{
-        width: 100%;
-        flex-direction: column; 
-    }
-    .menu li{
-        padding:35px;
-        border-bottom: 3px solid white;
-    }
-
-    .llamanos{
-        display: none;
-    }
-    #btn-menu:checked ~ .menu{
-        margin-left: 0;
-    } 
-
-    .type{
-        white-space: inherit;
+       .type{
         font-size: 20px;
     }
-    .intro{
-        
-        width: 90%;
 
-    }
+    .btn_inicio{
+      display: none;
+      
+  }  
+
+      
+     }
+
+     
+
+    
+    
+
+    
+    
     .servicios{
         margin-top: 750px;
 
@@ -148,17 +166,11 @@
   }
 
     
-
-   
-
-
-    
 }
 
 @media (max-width:480px){
 
   .menu{
-   
     width: 100%;
     margin-left: -100%;
     transition: all 0.5s;
@@ -166,11 +178,22 @@
     padding:  20px 0px;
     z-index: 1000;
   }
-  .particles-js{
-    margin-top: 120px;
+
+  #particles-js{
+    margin-top: 30px;
+      
+    .seccion1{
+      width: 90%;
+    }
+    .type{
+      font-size: 15px;
+    }
 
   }
-.type{
-  font-size: 15px;
+
+.t_servicios{
+  margin-top: 630px;
+}
 
 }
+

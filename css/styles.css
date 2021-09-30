@@ -317,6 +317,7 @@ footer p {
           justify-content: center;
   padding-top: 85px;
   margin-top: -85px;
+  /* The typewriter cursor effect */
 }
 
 #particles-js .seccion1 {
@@ -347,7 +348,6 @@ footer p {
   background-color: rgba(201, 204, 250, 0.753);
   padding: 25px;
   border-radius: 5%;
-  /* The typewriter cursor effect */
 }
 
 #particles-js .intro .nombre {
@@ -368,7 +368,7 @@ footer p {
   line-height: 26px;
 }
 
-#particles-js .intro .type {
+#particles-js .type {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #7700ff;
@@ -381,6 +381,9 @@ footer p {
   /* Adjust as needed */
   font-family: 'Anton', sans-serif;
   font-size: 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #08086b;
   -webkit-animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
           animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
@@ -1169,9 +1172,11 @@ footer p {
 @media (max-width: 900px) {
   #particles-js {
     padding-top: 265px;
+    margin-top: 150px;
   }
   .type {
     font-size: 15px;
+    color: black;
   }
   .servicios {
     margin-top: 350px;
@@ -1194,17 +1199,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  #particles-js {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    padding-top: 195px;
-  }
   header {
     padding: 0;
     display: -webkit-box;
@@ -1233,7 +1227,7 @@ footer p {
             justify-content: center;
     position: absolute;
     background-color: blue;
-    width: 50%;
+    width: 100%;
     margin-left: -100%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -1258,12 +1252,26 @@ footer p {
   #btn-menu:checked ~ .menu {
     margin-left: 0;
   }
-  .type {
-    white-space: inherit;
+  #particles-js {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 195px;
+    margin-top: 20px;
+  }
+  #particles-js .intro {
+    width: 90%;
+  }
+  #particles-js .type {
     font-size: 20px;
   }
-  .intro {
-    width: 90%;
+  #particles-js .btn_inicio {
+    display: none;
   }
   .servicios {
     margin-top: 750px;
@@ -1301,8 +1309,17 @@ footer p {
     padding: 20px 0px;
     z-index: 1000;
   }
-  .type {
-    display: none;
+  #particles-js {
+    margin-top: 30px;
+  }
+  #particles-js .seccion1 {
+    width: 90%;
+  }
+  #particles-js .type {
+    font-size: 15px;
+  }
+  .t_servicios {
+    margin-top: 630px;
   }
 }
 

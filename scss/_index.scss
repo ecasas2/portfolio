@@ -42,33 +42,36 @@
                             line-height: 26px;
                         }
 
-                            .type{
-
-                                overflow: hidden; /* Ensures the content is not revealed until the animation */
-                                border-right: .15em solid rgb(119, 0, 255); /* The typwriter cursor */
-                                white-space: nowrap; /* Keeps the content on a single line */
-                                margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-                                letter-spacing: .15em; /* Adjust as needed */
-                                font-family: 'Anton', sans-serif;
-                                font-size: 36px;
-                                color: rgb(8, 8, 107);
-                                animation: 
-                                typing 5.5s steps(40, end),
-                                blink-caret .75s step-end infinite;
-                            }
-
-                                @keyframes typing {
-                                    from { width: 0 }
-                                    to { width: 100% }
-                                }
-                                
-                                /* The typewriter cursor effect */
-                                @keyframes blink-caret {
-                                    from, to { border-color: transparent }
-                                    50% { border-color: orange; }
-                                }
-
+                            
             }
+
+            .type{
+
+                overflow: hidden; /* Ensures the content is not revealed until the animation */
+                border-right: .15em solid rgb(119, 0, 255); /* The typwriter cursor */
+                white-space: nowrap; /* Keeps the content on a single line */
+                margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                letter-spacing: .15em; /* Adjust as needed */
+                font-family: 'Anton', sans-serif;
+                font-size: 36px;
+                width: fit-content;
+                color: rgb(8, 8, 107);
+                animation: 
+                typing 5.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+            }
+
+                @keyframes typing {
+                    from { width: 0 }
+                    to { width: 100% }
+                }
+                
+                /* The typewriter cursor effect */
+                @keyframes blink-caret {
+                    from, to { border-color: transparent }
+                    50% { border-color: orange; }
+                }
+
 
             .animacion{
                 margin-top: -98px;
