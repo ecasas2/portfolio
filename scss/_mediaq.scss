@@ -187,9 +187,30 @@ header label p{
     }
     .type{
       font-size: 15px;
+      width: inherit;
+    }
+    .animacion{
+      
+      img{
+        width: 250px;
+      }
     }
 
+    .intro{
+
+      .nombre{
+           font-size: 17px ;
+      }
+
+      p{
+        font-size: 14px;
+      }
+      
+    }
+
+
   }
+
 
 .t_servicios{
   margin-top: 630px;

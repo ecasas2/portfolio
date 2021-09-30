@@ -1317,6 +1317,16 @@ footer p {
   }
   #particles-js .type {
     font-size: 15px;
+    width: inherit;
+  }
+  #particles-js .animacion img {
+    width: 250px;
+  }
+  #particles-js .intro .nombre {
+    font-size: 17px;
+  }
+  #particles-js .intro p {
+    font-size: 14px;
   }
   .t_servicios {
     margin-top: 630px;
