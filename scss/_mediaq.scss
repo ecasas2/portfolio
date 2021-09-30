@@ -1,0 +1,156 @@
+@media (max-width:1450px){
+    .sobre_mi_programas{
+      display: flex;
+      flex-direction:column;
+      flex-wrap: wrap;
+      
+    }
+
+    .sobre_mi{
+      margin-top: 0px;
+      display: flex;
+      gap: 0px;
+      
+    }
+    .cont_programas{
+      text-align: center;
+    }
+    .sobre_mi_info{
+      margin-bottom: 300px;
+    }
+  
+  }
+
+
+  
+
+@media (max-width:900px){
+    #particles-js{
+      
+        padding-top: 265px;
+    }
+
+    .type{
+        font-size: 19px;
+    }
+
+    .servicios{
+        margin-top: 350px;
+    }
+
+    .sobre_mi{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0px;
+      
+    }
+    
+
+
+    .cont_programas{
+      text-align: center;
+    }
+  
+
+  
+}
+
+@media (max-width:768px){
+
+    #particles-js{
+       justify-content: center;
+       align-items: baseline;
+       align-content: center;
+       padding-top: 195px;
+    }
+
+    header{
+        padding: 0;
+        display: flex;
+        justify-content:space-between;
+        
+    }
+
+    header img{
+        margin: 20px 40px;
+    }
+    header label{
+        display:block; 
+    }
+    header label p{
+        margin-left: 33px;
+        margin-top: -10px;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        background-color:blue;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+        margin-top: 100px;
+        padding:  20px 0px;
+        z-index: 1000;
+    }
+    .menu ul{
+        width: 100%;
+        flex-direction: column; 
+    }
+    .menu li{
+        padding:35px;
+        border-bottom: 3px solid white;
+    }
+
+    .llamanos{
+        display: none;
+    }
+    #btn-menu:checked ~ .menu{
+        margin-left: 0;
+    } 
+
+    .type{
+        white-space: inherit;
+    }
+    .intro{
+        
+        width: 90%;
+
+    }
+    .servicios{
+        margin-top: 750px;
+
+
+    }
+
+    .sobre_mi{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0px;
+      
+    }
+
+    .sobre_mi_info{
+
+      margin-top: 50px;
+    }
+
+
+    .sobre_mi_programas{
+      gap: 35px;
+    }
+
+  .cont_programas{
+    text-align: center;
+  }
+
+    
+
+   
+
+
+    
+}
+

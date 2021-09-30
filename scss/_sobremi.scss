@@ -1,0 +1,215 @@
+.parallax {
+    margin-top: 130px;
+    padding-top: 120px;
+    background-image: url("../img/bg_secciones.jpg"); 
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position:  50% 20%;
+    background-repeat: no-repeat;
+    background-size:1920px 500px;
+    display: flex;
+    justify-content: center;
+
+    .parallax_titulo{
+        width: fit-content;  
+    }
+
+    .type{
+
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgb(119, 0, 255); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        font-family: Raleway;
+        font-size: 70px;
+        color: white;
+        font-weight: 900;
+        animation: 
+          typing 3.5s steps(20, end),
+          blink-caret .75s step-end infinite;
+
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 100% }
+            }
+            
+            /* The typewriter cursor effect */
+            @keyframes blink-caret {
+                from, to { border-color: transparent }
+                50% { border-color: orange; }
+            }
+      }
+
+
+        
+
+        
+
+}
+
+.t_sobremi{
+    text-align: center;
+    padding: 80px;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+  .sobre_mi{
+    display: flex;
+    flex-direction: row;
+
+        .sobre_mi_info{
+            display:flex;
+            flex-direction:row ;
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-content: center;
+            margin-top: 20px;
+            
+        }
+
+            .sobre_mi_programas{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 75px;
+                margin-top: 90px; 
+                
+            }
+
+                    .programas1{
+                        display: flex;
+                        flex-direction: row;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 30px;
+                    }
+            
+            
+            
+                .progress {
+                    background: rgba(49, 3, 109, 0.315);
+                    justify-content: flex-start;
+                    border-radius: 100px;
+                    align-items: center;
+                    position: relative;
+                    padding: 0 5px;
+                    display: flex;
+                    height: 40px;
+                    width: 300px;
+
+                            .progress-value{
+                                box-shadow: 0 10px 40px -10px rgb(18, 4, 97);
+                                border-radius: 100px;
+                                background: rgb(231, 20, 20);
+                                height: 30px;
+                                width: 0;
+                            }
+
+                                .progress-value p{
+                                    color: white;
+                                    font-size: 19px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                }
+                                
+                                .ps {
+                                    animation: loadps 15s normal forwards;
+                                    
+                                }
+
+                                @keyframes loadps {
+                                    0% { width: 0; }
+                                    100% { width: 80%; }
+                                }
+                                
+                                .ai {
+                                    animation: loadai 15s normal forwards;
+                                    
+                                }
+                                
+                                @keyframes loadai {
+                                    0% { width: 0; }
+                                    100% { width: 80%; }
+                                }
+                                .id {
+                                    animation: loadid 15s normal forwards;
+                                    
+                                }
+                                
+                                @keyframes loadid {
+                                    0% { width: 0; }
+                                    100% { width: 50%; }
+                                }
+
+                                .ae {
+                                    animation: loadae 15s normal forwards;
+                                    
+                                }
+                                
+                                @keyframes loadae {
+                                    0% { width: 0; }
+                                    100% { width: 80%; }
+                                }
+
+                                .html {
+                                    animation: loadhtml 15s normal forwards;
+                                    
+                                }
+                                
+                                @keyframes loadhtml {
+                                    0% { width: 0; }
+                                    100% { width: 50%; }
+                                }
+
+                                .css{
+                                    animation: loadcss 15s normal forwards;
+                                    
+                                }
+                                
+                                @keyframes loadcss {
+                                    0% { width: 0; }
+                                    100% { width: 50%; }
+                                }
+                                
+                                .git{
+                                    animation: loadgit 15s normal forwards;
+                                    
+                                }
+                                
+                                @keyframes loadgit {
+                                    0% { width: 0; }
+                                    100% { width: 50%; }
+                                }
+
+                                .github{
+                                    animation: loadgithub 15s normal forwards;
+                                    
+                                }
+                                
+                                @keyframes loadgithub {
+                                    0% { width: 0; }
+                                    100% { width: 50%; }
+                                }
+
+                }  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

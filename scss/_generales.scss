@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: blue;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#btn-menu{
+    display: none;
+    
+}
+header label{
+    display: none;
+    padding: 15px;
+    width: 60px;
+    transition: all 2s;
+}
+header label p{
+    color: white;
+    font-family: Raleway;
+    text-align: center;
+}
+header label:hover{
+    cursor: pointer;
+    background-color: rgb(253, 115, 1);    
+}
+.menu {
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    font-family: Raleway;
+  }
+.menu ul{
+    display: flex;
+    justify-content: space-around;  
+}
+
+li{
+    list-style: none;    
+}
+li a{
+    transition: 0.3s ease;
+    border-top: 4px solid rgba(0, 0, 255, 0);
+    border-bottom: 4px solid rgba(0, 0, 255, 0);
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+li a:hover{
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.llamanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin-right: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 3px dotted rgb(116, 252, 5);
+    border-radius: 50% ;
+    padding: 30px;
+    
+    
+}
+
+
+.llamanos:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+    background-color: rgba(158, 248, 12, 0.418);
+    
+}
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: blue;
+  height: 90px;
+  padding-bottom: 85px;
+  padding-top: 45px;
+  bottom: 0;
+  position: relative;
+  
+}
+.redes{
+
+  display: flex;
+  margin-right: 20px;
+}
+.redes a{
+  padding: 10px;
+ 
+  
+  
+}
+
+footer p{
+  font-size: 20px;
+  color: white;
+  margin-left: 120px;
+
+}
+
+
+
+/*---Divisor animado----*/
+
+.editorial {
+display: block;
+width: 100%;
+height: 60px;
+max-height: 60px;
+margin: 0;
+bottom:109px;
+position: absolute;
+left:0px;
+float:left;
+}
+
+.parallax1 > use {
+animation: move-forever1 10s linear infinite;
+&:nth-child(1) {
+  animation-delay: -2s;
+}
+}
+.parallax2 > use {
+animation: move-forever2 8s linear infinite;
+&:nth-child(1) {
+  animation-delay: -2s;
+}
+}
+.parallax3 > use {
+animation: move-forever3 6s linear infinite;
+&:nth-child(1) {
+  animation-delay: -2s;
+}
+}
+.parallax4 > use {
+animation: move-forever4 4s linear infinite;
+&:nth-child(1) {
+  animation-delay: -2s;
+}
+}
+@keyframes move-forever1 {
+0% {
+  transform: translate(85px, 0%);
+}
+100% {
+  transform: translate(-90px, 0%);
+}
+}
+@keyframes move-forever2 {
+0% {
+  transform: translate(-90px, 0%);
+}
+100% {
+  transform: translate(85px, 0%);
+}
+}
+@keyframes move-forever3 {
+0% {
+  transform: translate(85px, 0%);
+}
+100% {
+  transform: translate(-90px, 0%);
+}
+}
+@keyframes move-forever4 {
+0% {
+  transform: translate(-90px, 0%);
+}
+100% {
+  transform: translate(85px, 0%);
+
+  color: #0000ff;
+}
+}
