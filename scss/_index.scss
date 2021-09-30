@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     padding-top: 85px;
     margin-top: -85px;
 
@@ -13,6 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            align-content: center;
             flex-wrap: wrap;
         }
 
@@ -194,14 +196,14 @@
 
 
 .servicios{
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    margin-left: 120px;
     margin-top: 245px;
-    margin-bottom: 120px;
+    margin-bottom: 0px;
     padding-bottom: 320px;
 
         .servicios__cards{
@@ -227,7 +229,7 @@
             box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
           -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
           -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-            height: 300px;
+            height: 350px;
             left: 0;
             margin: auto;
             overflow: hidden;
@@ -255,9 +257,9 @@
                 .card__p {
                     color: rgba(0,0,0,.6);
                     font-family: 'Raleway', sans-serif;
-                    font-size: 16px;
-                    font-weight: normal;
-                    margin-top: 200px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 220px;
                     position: absolute;
                     text-align: justify;
                     margin-right: 9px;
@@ -268,8 +270,8 @@
                 }
 
                 .card:hover {
-                    height: 480px;
-                    width: 400px;
+                    height: 450px;
+                    width: 350px;
                 
                 }
                 .card:hover .cta-container {
@@ -290,7 +292,7 @@
                     
                 }
                 .card:hover h2 small { color: #fff }
-                .card:hover p { margin-top: 300px }
+                .card:hover p { margin-top: 270px }
                 .card_circle {
                     background: url("../img/foto/Ratablanca7_card_1.jpg")  no-repeat center bottom;
                     background-color: #5900ff;
@@ -382,13 +384,12 @@
                     color: #3487f7;
                     display: inline-block;
                     font-family: 'Raleway', sans-serif;
-                    font-size: 17px;
-                    font-weight: 400;
-                    height: 36px;
+                    font-size: 22px;
+                    height: 46px;
                     letter-spacing: 0.5px;
                     line-height: 36px;
-                    margin-bottom: 20px;
-                    margin-top: 15px;
+                    margin-bottom: 700px;
+                    margin-top: 5px;
                     padding: 0 2rem;
                     text-decoration: none;
                     text-transform: uppercase;

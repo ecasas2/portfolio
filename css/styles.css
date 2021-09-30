@@ -315,6 +315,8 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding-top: 85px;
   margin-top: -85px;
   /* The typewriter cursor effect */
@@ -332,6 +334,8 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -557,6 +561,7 @@ footer p {
 }
 
 .servicios {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,19 +569,14 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: 120px;
   margin-top: 245px;
-  margin-bottom: 120px;
+  margin-bottom: 0px;
   padding-bottom: 320px;
 }
 
@@ -605,7 +605,7 @@ footer p {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-  height: 300px;
+  height: 350px;
   left: 0;
   margin: auto;
   overflow: hidden;
@@ -635,9 +635,9 @@ footer p {
 .servicios .card__p {
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 200px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 220px;
   position: absolute;
   text-align: justify;
   margin-right: 9px;
@@ -648,8 +648,8 @@ footer p {
 }
 
 .servicios .card:hover {
-  height: 480px;
-  width: 400px;
+  height: 450px;
+  width: 350px;
 }
 
 .servicios .card:hover .cta-container {
@@ -678,7 +678,7 @@ footer p {
 }
 
 .servicios .card:hover p {
-  margin-top: 300px;
+  margin-top: 270px;
 }
 
 .servicios .card_circle {
@@ -775,13 +775,12 @@ footer p {
   color: #3487f7;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  height: 36px;
+  font-size: 22px;
+  height: 46px;
   letter-spacing: 0.5px;
   line-height: 36px;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin-bottom: 700px;
+  margin-top: 5px;
   padding: 0 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -1173,10 +1172,22 @@ footer p {
   #particles-js {
     padding-top: 265px;
     margin-top: 150px;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .type {
-    font-size: 15px;
-    color: black;
+  #particles-js .intro {
+    width: 100%;
+  }
+  #particles-js .type {
+    font-size: 25px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #particles-js .btn_inicio {
+    display: none;
   }
   .servicios {
     margin-top: 350px;
@@ -1207,6 +1218,13 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  header .logo {
+    width: 75px;
+    height: 75px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   header img {
     margin: 20px 40px;
@@ -1241,9 +1259,14 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menu li {
+    width: 100%;
     padding: 35px;
+    margin-left: -40px;
     border-bottom: 3px solid white;
   }
   .llamanos {
@@ -1310,7 +1333,9 @@ footer p {
     z-index: 1000;
   }
   #particles-js {
-    margin-top: 30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   #particles-js .seccion1 {
     width: 90%;
@@ -1328,8 +1353,17 @@ footer p {
   #particles-js .intro p {
     font-size: 14px;
   }
+  .servicios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
   .t_servicios {
-    margin-top: 630px;
+    width: 90%;
+    margin-top: 430px;
+    font-size: 25px;
   }
 }
 
