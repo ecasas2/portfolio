@@ -1171,7 +1171,7 @@ footer p {
     padding-top: 265px;
   }
   .type {
-    font-size: 19px;
+    font-size: 15px;
   }
   .servicios {
     margin-top: 350px;
@@ -1260,6 +1260,7 @@ footer p {
   }
   .type {
     white-space: inherit;
+    font-size: 20px;
   }
   .intro {
     width: 90%;
@@ -1299,6 +1300,9 @@ footer p {
     margin-top: 100px;
     padding: 20px 0px;
     z-index: 1000;
+  }
+  .type {
+    display: none;
   }
 }
 
