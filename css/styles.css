@@ -1354,11 +1354,12 @@ footer p {
     font-size: 14px;
   }
   .servicios {
+    width: 80%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 0px;
+    margin-left: 40px;
   }
   .t_servicios {
     width: 90%;
