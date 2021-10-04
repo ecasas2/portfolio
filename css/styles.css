@@ -1393,11 +1393,20 @@ footer {
     padding-top: 70px;
   }
   .parallax .type {
-    font-size: 50px;
+    font-size: 45px;
   }
   .t_sobremi {
     padding: 35px;
     font-size: 19px;
+  }
+  .sobre_mi .foto img {
+    width: 300px;
+  }
+  .sobre_mi .info_sobremi {
+    width: 80%;
+  }
+  .sobre_mi .progress {
+    width: 150px;
   }
   /* footer*/
   .footer_cont {
@@ -1455,11 +1464,20 @@ footer {
     width: 250px;
     height: 250px;
   }
+  .parallax {
+    background-size: 900px 300px;
+    padding-top: 100px;
+  }
+  .parallax .type {
+    font-size: 35px;
+  }
   .sobre_mi .foto img {
     width: 300px;
   }
   .sobre_mi .progress {
     width: 250px;
+    margin-top: 25px;
+    margin-bottom: 35px;
   }
 }
 

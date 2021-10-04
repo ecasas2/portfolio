@@ -238,7 +238,7 @@ header label p{
     padding-top: 70px;
 
     .type{
-      font-size: 50px;
+      font-size: 45px;
     }
 
     
@@ -247,7 +247,28 @@ header label p{
   .t_sobremi{
     padding: 35px;
     font-size: 19px;
+
+    
   }
+
+  .sobre_mi{
+  
+    .foto{ 
+      img{
+        width: 300px;
+      }
+    }
+    .info_sobremi{
+      width: 80%;
+    }
+
+      .progress {
+      width: 150px;
+      }
+
+  }
+    
+  
 
  
 
@@ -315,6 +336,18 @@ header label p{
   
   }
 
+  .parallax {
+    background-size:900px 300px;
+    padding-top: 100px;
+
+    .type{
+      font-size: 35px;
+    }
+
+    
+    
+  }
+
   .sobre_mi{
     .foto{ 
       img{
@@ -324,6 +357,8 @@ header label p{
 
       .progress {
       width: 250px;
+      margin-top: 25px;
+      margin-bottom: 35px;
       }
   }
   
