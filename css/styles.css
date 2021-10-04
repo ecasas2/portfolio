@@ -127,37 +127,55 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: blue;
-  height: 90px;
-  padding-bottom: 85px;
-  padding-top: 45px;
-  bottom: 0;
   position: relative;
 }
 
-.redes {
+.footer_cont {
+  background-color: blue;
+  position: absolute;
+  width: 100%;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -120px;
+  padding-top: 70px;
+}
+
+.footer_cont .espacio {
+  width: 30%;
+}
+
+.footer_cont .info {
+  width: 33%;
+  color: white;
+  text-align: center;
+  font-family: Raleway;
+}
+
+.redes {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-right: 20px;
 }
 
 .redes a {
   padding: 10px;
-}
-
-footer p {
-  font-size: 20px;
-  color: white;
-  margin-left: 120px;
 }
 
 /*---Divisor animado----*/
@@ -586,7 +604,6 @@ footer p {
   display: flex;
   width: 340px;
   height: 400px;
-  background: #d11111;
   background: linear-gradient(151deg, rgba(209, 17, 17, 0.501838) 0%, rgba(121, 137, 230, 0.552258) 26%, rgba(9, 31, 158, 0.471026) 88%);
   border-bottom: 20px solid rgba(255, 0, 0, 0.336);
   margin-top: 65px;
@@ -1323,48 +1340,72 @@ footer p {
 }
 
 @media (max-width: 480px) {
-  .menu {
-    width: 100%;
-    margin-left: -100%;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    margin-top: 100px;
-    padding: 20px 0px;
-    z-index: 1000;
-  }
   #particles-js {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
+    height: 750px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 120px;
   }
-  #particles-js .seccion1 {
-    width: 90%;
-  }
-  #particles-js .type {
-    font-size: 15px;
-    width: inherit;
+  #particles-js .animacion {
+    margin-top: 75px;
   }
   #particles-js .animacion img {
     width: 250px;
-  }
-  #particles-js .intro .nombre {
-    font-size: 17px;
-  }
-  #particles-js .intro p {
-    font-size: 14px;
+    height: 250px;
   }
   .servicios {
-    width: 80%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+    margin-top: 230px;
+  }
+  .servicios .servicios__cards {
+    margin-top: 65px;
+    margin-right: 0px;
   }
   .t_servicios {
-    width: 90%;
-    margin-top: 430px;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 160px;
+  }
+  /* footer*/
+  .footer_cont {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer_cont .info {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  .footer_cont .redes {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
   }
 }
 
