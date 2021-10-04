@@ -43,10 +43,11 @@
 
         <div class="foto" data-aos="zoom-in-right" data-aos-duration="3000"> <img src="img/sobre_mi.jpg" alt=""></div>
             <div class="sobre_mi_info">
-                <p class="info_sobremi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sequi ullam reprehenderit vel quis quas sunt blanditiis cum temporibus distinctio quod officia, quae cumque beatae dolores. Incidunt rem itaque atque.</p>
+                <p class="info_sobremi">Soy Diseñador Gráfico egresado de la Universidad Tecnológica de México en el año 2012.</p>
+                <p class="info_carrera" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eos soluta aliquam? Nulla, necessitatibus. Quos odio in quam voluptas quaerat atque a cumque incidunt quo quas? Fuga voluptas in consequuntur!</p>
                 <div class="sobre_mi_programas">
                     <div class="cont_programas">
-                        <p>PHOTOSHOP</p>
+                        <p class="programas">PHOTOSHOP</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/photoshop.png" alt="">
                             <div class="progress">
@@ -57,7 +58,7 @@
 
 
                     <div class="cont_programas">
-                        <p>ILLUSTRATOR</p>
+                        <p class="programas">ILLUSTRATOR</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/illustrator.png" alt="">
                             <div class="progress">
@@ -69,7 +70,7 @@
 
                 <div class="sobre_mi_programas">
                     <div class="cont_programas">
-                        <p>AFTER EFFECTS</p>
+                        <p class="programas">AFTER EFFECTS</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/after.png" alt="">
                             <div class="progress">
@@ -80,7 +81,7 @@
 
 
                     <div class="cont_programas">
-                        <p>IN DESIGN</p>
+                        <p class="programas">IN DESIGN</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/design.png" alt="">
                             <div class="progress">
@@ -93,7 +94,7 @@
 
                 <div class="sobre_mi_programas">
                     <div class="cont_programas">
-                        <p>HTML 5</p>
+                        <p class="programas">HTML 5</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/html5.png" alt="">
                             <div class="progress">
@@ -104,7 +105,7 @@
 
 
                     <div class="cont_programas">
-                        <p>CSS 3</p>
+                        <p class="programas">CSS 3</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/css.png" alt="">
                             <div class="progress">
@@ -117,7 +118,7 @@
 
                 <div class="sobre_mi_programas">
                     <div class="cont_programas">
-                        <p>GIT</p>
+                        <p class="programas">GIT</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/gitl.png" alt="">
                             <div class="progress">
@@ -128,7 +129,7 @@
 
 
                     <div class="cont_programas">
-                        <p>GIT HUB</p>
+                        <p class="programas">GIT HUB</p>
                         <div class="programas1">
                             <img src="img/iconos/programas/github.png" alt="git hub logo">
                             <div class="progress">
@@ -138,9 +139,43 @@
                     </div>
                 </div>
 
+              <!--boton animado-->
 
+                <div class="buttons" data-aos="flip-left">
+                    <button class="blob-btn">
+                    VER TRABAJOS
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                    </button>
+                    <br/>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                    </filter>
+                    </defs>
+                </svg>
             </div>
+
+
+            </div>   
     </div>
+
+  
+
+   
+        
+
+
     
     
     
@@ -148,40 +183,40 @@
     <footer>
         <!--Divisor animado-->
   
-      <svg class="editorial"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none">
-  <defs>
-  <path id="gentle-wave"
-  d="M-160 44c30 0 
-     58-18 88-18s
-     58 18 88 18 
-     58-18 88-18 
-     58 18 88 18
-     v44h-352z" />
-   </defs>
-   <g class="parallax1">
-    <use xlink:href="#gentle-wave" x="50" y="3" fill="#f48b61"/>
-   </g>
-     <g class="parallax2">
-    <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
-     </g>
-       <g class="parallax3">
-    <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
-    </g>
-     <g class="parallax4">
-    <use xlink:href="#gentle-wave" x="50" y="6" fill="#0000ff"/>  
-   </g>
-  </svg>
-        <div class="footer_cont">
-  
-          <div class="espacio"></div>
-              <div class="info">
-                <p>Sitio desarrollado por Ernesto Casas</p>
-              </div>
-  
+            <svg class="editorial"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 "
+            preserveAspectRatio="none">
+        <defs>
+        <path id="gentle-wave"
+        d="M-160 44c30 0 
+            58-18 88-18s
+            58 18 88 18 
+            58-18 88-18 
+            58 18 88 18
+            v44h-352z" />
+        </defs>
+        <g class="parallax1">
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#f48b61"/>
+        </g>
+            <g class="parallax2">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+            </g>
+            <g class="parallax3">
+            <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+            </g>
+            <g class="parallax4">
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#0000ff"/>  
+        </g>
+        </svg>
+                <div class="footer_cont">
+        
+                <div class="espacio"></div>
+                    <div class="info">
+                        <p>Sitio desarrollado por Ernesto Casas</p>
+                    </div>
+        
               <div class="redes">
                 <a href=""><img src="img/footer/facebook.svg" width="40px" alt=""></a>
                 <a href=""><img src="img/footer/instagram.svg" width="40px"  alt=""></a>
@@ -190,8 +225,9 @@
               </div>
   
       </div>
+
   
-      </footer>
+    </footer>
       
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
