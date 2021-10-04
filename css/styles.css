@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
@@ -1386,6 +1387,18 @@ footer {
     font-size: 20px;
     margin-top: 160px;
   }
+  /* sección sobre mi*/
+  .parallax {
+    background-size: 900px 300px;
+    padding-top: 70px;
+  }
+  .parallax .type {
+    font-size: 50px;
+  }
+  .t_sobremi {
+    padding: 35px;
+    font-size: 19px;
+  }
   /* footer*/
   .footer_cont {
     -webkit-box-pack: center;
@@ -1406,6 +1419,47 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 340px) {
+  #particles-js {
+    width: 100%;
+    height: 750px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 120px;
+  }
+  #particles-js .type {
+    width: 40%;
+    font-size: 17px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    white-space: nowrap;
+  }
+  #particles-js .intro .nombre {
+    font-size: 19px;
+  }
+  #particles-js .animacion {
+    margin-top: 75px;
+    margin-left: 0px;
+  }
+  #particles-js .animacion img {
+    width: 250px;
+    height: 250px;
+  }
+  .sobre_mi .foto img {
+    width: 300px;
+  }
+  .sobre_mi .progress {
+    width: 250px;
   }
 }
 

@@ -231,7 +231,31 @@ header label p{
     margin-top: 160px;
   }
 
+  /* sección sobre mi*/
+
+  .parallax {
+    background-size:900px 300px;
+    padding-top: 70px;
+
+    .type{
+      font-size: 50px;
+    }
+
+    
+    
+  }
+  .t_sobremi{
+    padding: 35px;
+    font-size: 19px;
+  }
+
+ 
+
+  
+
+
 /* footer*/
+ 
 .footer_cont{
 
   justify-content: center;
@@ -247,6 +271,65 @@ header label p{
     display: flex;
     justify-content: center;
     margin-right: 0px;
-}   
+  }   
+    }
 }
-}
+
+@media (max-width:340px){
+
+  #particles-js{
+    width: 100%;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 120px;
+
+      .type{
+        width: 40%;
+        font-size: 17px;
+        width: fit-content;
+        white-space: nowrap;
+        
+    }
+
+    .intro{
+      
+       .nombre{
+         font-size: 19px;
+       }
+    }
+
+    
+  
+        .animacion{
+          
+          margin-top: 75px;
+          margin-left: 0px;
+          
+          img{
+            width: 250px;
+            height: 250px;
+          }
+      }
+  
+  }
+
+  .sobre_mi{
+    .foto{ 
+      img{
+        width: 300px;
+      }
+    }
+
+      .progress {
+      width: 250px;
+      }
+  }
+  
+  
+
+
+  }
+
+
