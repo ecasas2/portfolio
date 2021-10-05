@@ -252,30 +252,56 @@ header label p{
   }
 
   .sobre_mi{
+
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        .foto{
+          img{
+            height: 650px;
+          }
+        }
+
+        .sobre_mi_info{
+
+        .info_sobremi{
+          width: 80%;
+          font-size: 24px;
+          font-weight: 600;
+          padding:10px 18px;
+          text-align: left;
+        }
+
+        .info_carrera{
+          margin: 40px 35px;
+          padding: 2em 2em;
+          
+        }
+
+        .programas{
+          text-align: left;
+          padding-left: 22px;
+        }
+
+          .progress {
+          width: 170px;
+          }
+      }
+
   
-    .foto{ 
-      img{
-        width: 300px;
-      }
-    }
-    .info_sobremi{
-      width: 80%;
-    }
+    } 
 
-      .progress {
-      width: 150px;
-      }
-
+    .buttons {
+      height: 68px;
+      text-align: center;
+      margin-top: -210px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+  
+      
   }
-    
-  
 
- 
-
-  
-
-
-/* footer*/
+  /* footer*/
  
 .footer_cont{
 
@@ -294,7 +320,19 @@ header label p{
     margin-right: 0px;
   }   
     }
-}
+
+
+  }
+
+  
+    
+  
+
+ 
+
+  
+
+
 
 @media (max-width:340px){
 
@@ -348,12 +386,7 @@ header label p{
     
   }
 
-  .sobre_mi{
-    .foto{ 
-      img{
-        width: 300px;
-      }
-    }
+  
 
       .progress {
       width: 250px;
@@ -365,6 +398,6 @@ header label p{
   
 
 
-  }
+  
 
 

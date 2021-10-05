@@ -57,11 +57,17 @@
 }
 
 .sobre_mi{
-    display: flex;
-    flex-direction: row;
+    display:flex;
     margin-bottom: 70px;
         
-    
+        .foto{
+            height: 310px;
+            position: sticky;
+            top: 0;
+            margin-bottom: 350px;
+            z-index: -1;
+            
+        }
 
         .sobre_mi_info{
             display:flex;
@@ -75,7 +81,8 @@
                 font-size: Raleway;
                 font-size: 3em;
                 text-align: justify;
-                padding: 0px 2em;
+                padding: 1em 2em;
+                background-color: rgba(255, 255, 255, 0.397);
             }
             .info_carrera{
                 font-size: Raleway;
@@ -241,9 +248,9 @@
     .buttons {
         height: 68px;
         text-align: center;
-        padding-bottom: 70px;
         margin-top: 50px;
-        margin-bottom: 350px;
+        margin-bottom: 50px;
+        margin-left: 650px;
 
         
     }
@@ -358,6 +365,13 @@
         
     }
 
+.espacio_1{
+    height: 120px;
+    width: 100%;
+    background-color: rgb(18, 4, 97);
+    padding-bottom: 320px;
+    z-index: -1;
+}
 
 
 
