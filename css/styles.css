@@ -890,7 +890,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 200px;
+  margin-bottom: 70px;
 }
 
 .sobre_mi .sobre_mi_info {
@@ -924,7 +924,7 @@ footer {
   text-align: justify;
   color: white;
   background: blue;
-  margin: 10px 85px;
+  margin: 40px 85px;
   padding: 2em 2em;
   border-bottom: .5vw solid red;
 }
@@ -936,7 +936,11 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 75px;
-  margin-top: 90px;
+  margin-top: 30px;
+}
+
+.sobre_mi .cont_programas {
+  margin-left: 5px;
 }
 
 .sobre_mi .cont_programas .programas {
@@ -1189,12 +1193,11 @@ footer {
 
 /* boton ver trabajos*/
 .buttons {
-  width: 100%;
-  background-color: rgba(119, 0, 255, 0.151);
   height: 68px;
   text-align: center;
   padding-bottom: 70px;
-  margin-top: 150px;
+  margin-top: 50px;
+  margin-bottom: 350px;
 }
 
 .blob-btn {
