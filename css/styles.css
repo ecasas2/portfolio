@@ -1348,6 +1348,221 @@ footer {
   z-index: -1;
 }
 
+.type {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #7700ff;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  font-family: Raleway;
+  font-size: 70px;
+  color: white;
+  font-weight: 900;
+  -webkit-animation: typing 3.5s steps(20, end), blink-caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(20, end), blink-caret 0.75s step-end infinite;
+  /* The typewriter cursor effect */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.p_portfolio {
+  text-align: center;
+  padding: 80px;
+  font-family: Raleway;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.portfolios1 {
+  margin-top: 60px;
+}
+
+.portfolios1 .titulo_secciones {
+  background: #0e00ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0e00ff), to(white));
+  background: linear-gradient(90deg, #0e00ff 0%, white 100%);
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  padding-left: 120px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-family: Raleway;
+  margin-bottom: 120px;
+}
+
+/* estilos galería de imágenes*/
+.item {
+  -webkit-transition: .5s easy-in-out;
+  transition: .5s easy-in-out;
+}
+
+.item:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.final {
+  margin-bottom: 280px;
+}
+
+.pcontacto {
+  text-align: center;
+  padding: 80px;
+  font-family: Raleway;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.contactanos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 90px;
+  margin-bottom: 280px;
+}
+
+.contactanos .caja_contacto {
+  width: 50%;
+  background-color: rgba(0, 0, 255, 0.199);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.contactanos .caja_contacto form {
+  width: 100%;
+}
+
+.contactanos .caja_contacto form .s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contactanos .caja_contacto form .gpo_input {
+  margin-bottom: 30px;
+  position: relative;
+  width: 45%;
+}
+
+.contactanos .caja_contacto form .gpo_input label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: blue;
+  cursor: text;
+  font-weight: 600;
+}
+
+.contactanos .caja_contacto form .gpo_input input {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid blue;
+  border-radius: 8px;
+  color: blue;
+  font-size: 16px;
+  background-color: white;
+}
+
+.contactanos .caja_contacto form .gpo_input1 {
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: 3%;
+}
+
+.contactanos .caja_contacto form .gpo_input1 label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: blue;
+  cursor: text;
+  font-weight: 600;
+}
+
+.contactanos .caja_contacto form .gpo_input1 textarea {
+  width: 95%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid blue;
+  border-radius: 8px;
+  color: blue;
+  font-size: 16px;
+  background-color: white;
+}
+
+.contactanos .caja_contacto form button {
+  width: 40%;
+  padding: 9px;
+  font-size: 17px;
+  color: white;
+  background-color: blue;
+  border-radius: 15px;
+  margin: 0 30%;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.contactanos .caja_contacto form button:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.contactanos .caja_contacto form input:focus ~ label,
+.contactanos .caja_contacto form input:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.contactanos .caja_contacto form textarea:focus ~ label,
+.contactanos .caja_contacto form textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
 @media (max-width: 1450px) {
   .sobre_mi_programas {
     display: -webkit-box;
@@ -1527,6 +1742,9 @@ footer {
   .cont_programas {
     text-align: center;
   }
+  .contactanos .caja_contacto form .gpo_input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1619,6 +1837,9 @@ footer {
     margin-top: -210px;
     margin-bottom: 50px;
     margin-left: 0px;
+  }
+  .contactanos .caja_contacto {
+    width: 90%;
   }
   /* footer*/
   .footer_cont {

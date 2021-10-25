@@ -1,0 +1,134 @@
+
+.pcontacto{
+    text-align: center;
+    padding: 80px;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contactanos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 280px;
+
+
+        .caja_contacto{
+            width: 50%;
+            background-color: rgba(0, 0, 255, 0.199);
+            padding: 30px;
+            border-radius: 15px;
+
+                form{
+                    width: 100%;
+                    
+
+                            .s1{
+                                display: flex;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                gap: 20px;
+                            }
+                    
+                    
+                           
+
+                            .gpo_input{
+                                margin-bottom: 30px;
+                                position: relative;
+                                width: 45%;
+
+                                    label{
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        padding: 10px;
+                                        color: blue;
+                                        cursor: text;
+                                        font-weight: 600;
+                                    }
+
+
+                                    input{
+                                        width: 100%;
+                                        padding: 10px;
+                                        outline: 0;
+                                        border: 1px solid blue;
+                                        border-radius: 8px;
+                                        color: blue;
+                                        font-size: 16px;
+                                        background-color: white;
+                                    }
+
+                                    
+
+                            
+                            }
+
+                            .gpo_input1{
+                                
+                                margin-bottom: 30px;
+                                position: relative;
+                                margin-left: 3%;
+
+                                label{
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    padding: 10px;
+                                    color: blue;
+                                    cursor: text;
+                                    font-weight: 600;
+                                    
+                                }
+
+                                    textarea{
+                                        width: 95%;
+                                        padding: 10px;
+                                        outline: 0;
+                                        border: 1px solid blue;
+                                        border-radius: 8px;
+                                        color: blue;
+                                        font-size: 16px;
+                                        background-color: white;
+                                    }
+                            }
+
+                            
+
+                          button{
+                              width: 40%;
+                              padding: 9px;
+                              font-size: 17px;
+                              color: white;
+                              background-color: blue;
+                              border-radius: 15px;
+                              margin: 0 30%;
+                              transition: 3s;
+                          }
+                          button:hover{
+                            transform: scale(1.3);
+                            
+                            } 
+
+                            input:focus~label,
+                            input:valid~label{
+                                top: -35px;
+                                font-size: 14px;
+                                transition: 0.6s;
+                            }
+
+                            textarea:focus~label,
+                            textarea:valid~label{
+                                top: -35px;
+                                font-size: 14px;
+                                transition: 0.6s;
+                            }
+                }
+
+
+        }
+}

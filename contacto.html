@@ -4,15 +4,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Diseñador graáfico freelance">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <meta name="description" content="Diseñador gráfico freelance cv">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <link rel="stylesheet" href="/css/estilos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+        <script src="https://kit.fontawesome.com/9136c95cc3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css">
         
-        <title>Diseño Gráafico y Desarrollo Web Ernesto Casas</title>
+        <title>Diseño Gráfico y Desarrollo Web Ernesto Casas</title>
     </head>
-    <body>
+<body>
         <header>
              <input type="checkbox" id="btn-menu">
             <label for="btn-menu"><img src="/img/menu.png"  alt=""><p>Menú</p></label> 
@@ -32,10 +35,137 @@
           </div>
           
         </header>
-<body>
 
-    <div class="parallax"><h1>CONTACTO</h1></div>
-    <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eos sequi accusantium eius expedita rerum. Rem assumenda iusto accusamus ad aperiam. Consequatur perspiciatis laboriosam magnam, rerum debitis unde itaque inventore.</p></div>
+
+        <div class="parallax"><div class="parallax_titulo"> <h1 class="type">CONTÁCTAME</h1></div>
+    </div>
     
+    <p class="pcontacto"  data-aos="fade-up" data-aos-duration="2000">Si te interesa contactarme para realizar algún trabajo, no dudes en ponerte en contacto.</p>
+
+    <div class="contactanos">
+
+        <div class="lottie">  
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_mwawjro9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+        </div>
+
+        <div class="caja_contacto">
+            <form action="">
+
+                <div class="s1">
+                    <div class="gpo_input">
+                        <input type="text" id="nombre" required>
+                        <label for="nombre"><i class="fas fa-user-alt"></i> Tu Nombre:</label>
+                    </div>
+                
+
+                    <div class="gpo_input">
+                        <input type="text" id="numero" required>
+                        <label for="numero"> <i class="fas fa-mobile-alt"></i> Tu N° de teléfono:</label>
+                    </div>
+               </div>
+
+
+               <div class="s1">
+                    <div class="gpo_input">
+                        <input type="text" id="mail" required>
+                        <label for="mail"><i class="fas fa-at"></i> Tu E-mail:</label>
+                    </div>
+                
+
+                    <div class="gpo_input">
+                        <input type="text" id="nombre" required>
+                        <label for="nombre"><i class="fas fa-user-tie"></i> Empresa:</label>
+                    </div>
+
+              </div>
+
+                <div class="gpo_input1">
+                    <textarea name="" id="mensaje" cols="30" rows="5" required></textarea>
+                    <label for="mensaje"><i class="fas fa-comments"></i> Mensaje:</label>
+                </div>
+                <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+
+
+
+
+
+            </form>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+<footer>
+    <!--Divisor animado-->
+
+  <svg class="editorial"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 24 150 28 "
+  preserveAspectRatio="none">
+<defs>
+<path id="gentle-wave"
+d="M-160 44c30 0 
+ 58-18 88-18s
+ 58 18 88 18 
+ 58-18 88-18 
+ 58 18 88 18
+ v44h-352z" />
+</defs>
+<g class="parallax1">
+<use xlink:href="#gentle-wave" x="50" y="3" fill="#f48b61"/>
+</g>
+ <g class="parallax2">
+<use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+ </g>
+   <g class="parallax3">
+<use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+</g>
+ <g class="parallax4">
+<use xlink:href="#gentle-wave" x="50" y="6" fill="#0000ff"/>  
+</g>
+</svg>
+    <div class="footer_cont">
+
+      <div class="espacio"></div>
+          <div class="info">
+            <p>Sitio desarrollado por Ernesto Casas</p>
+          </div>
+
+          <div class="redes">
+            <a href=""><img src="img/footer/facebook.svg" width="40px" alt=""></a>
+            <a href=""><img src="img/footer/instagram.svg" width="40px"  alt=""></a>
+            <a href=""><img src="img/footer/linkedin.svg" width="40px"  alt=""></a>
+            <a href=""><img src="img/footer/twitter.svg" width="40px"  alt=""></a>
+          </div>
+
+  </div>
+
+  </footer>
+  
+
 </body>
+    
 </html>
